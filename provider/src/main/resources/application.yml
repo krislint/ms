@@ -1,0 +1,11 @@
+dubbo:
+  application:
+    name: boot-order-service-provider
+  scan:
+    base-packages: com.moelyon.ms.provider.service
+  registry:
+    address: consul://127.0.0.1:8500
+  monitor:
+    protocol: registry
+server:
+  port: 8082
